@@ -1,0 +1,13 @@
+<div class="article-title-container">
+  <div class="article-banner">
+    <h1> Blog of the day: </h1>
+    <h1><%= @post.title.upcase %></h1>
+    <p>TYLER ROSANO | <%= @post.created.to_date %></p>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div class="blog-container" style="width: 80%;">
+    <%= @post.body.html_safe %>
+  </div>
+</div>

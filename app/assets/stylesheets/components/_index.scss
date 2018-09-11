@@ -1,0 +1,19 @@
+@import "navbar";
+@import "banner";
+@import "button";
+@import "footer";
+@import "content";
+@import "container";
+
+body {
+  background-color: grey !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.table i {
+  color: white !important;
+  font-size: 20px;
+}
