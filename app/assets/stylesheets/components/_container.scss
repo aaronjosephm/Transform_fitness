@@ -142,4 +142,25 @@
 
 }
 
+.logo-about {
+  padding-top: 50px;
+  margin-left: 100px;
+  margin-right: 10vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-bottom: solid 1px;
+  border-color: black;
 
+}
+
+.bio-container {
+  margin-left: 9vw;
+  margin-right: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio-container p {
+  color: black !important;
+}
