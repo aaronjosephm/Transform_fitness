@@ -32,3 +32,26 @@
   letter-spacing: 2px;
   font-weight: bold;
 }
+
+.landing-container i {
+  font-size: 25px !important;
+  margin-bottom: 20px;
+  color: black !important;
+
+}
+
+.landing-container p {
+  color: black !important;
+  font-size: 12px !important;
+}
+
+
+.landing-container {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-top: solid 30px;
+  border-color: #282727;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
