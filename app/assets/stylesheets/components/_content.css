@@ -76,7 +76,7 @@
 }
 
 .quote {
-  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner1");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), url("https://cdn.buttercms.com/nj99dCRQRRSEbSLBVjvj");
   background-size: cover;
   height: 300px;
   text-align: center;
@@ -133,7 +133,7 @@
 }
 
 .landing-contact-photo {
-  background-image: asset-url("contact-landing");
+  background-image: url("https://cdn.buttercms.com/7eHjtT0R0KUgfLwzOIsA");
   background-size: cover;
   width: 350px;
   height: 500px;
