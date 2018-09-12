@@ -103,3 +103,43 @@
   padding-left: 15vw;
   padding-right: 15vw;
 }
+
+.about-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-photo-card1 {
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), url("https://cdn.buttercms.com/v44V9CNSC2duHaoOh9hw");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 50%;
+  padding-left: 0;
+  padding-top: 20px;
+
+}
+
+.about-photo-card2 {
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("mealbanner");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 50%;
+  padding-top: 20px;
+
+}
+
+.about-photo-card3 {
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), url("https://cdn.buttercms.com/2wIBVpWRRGu8ApJlGUca");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 50%;
+  padding-top: 20px;
+
+}
+
+
