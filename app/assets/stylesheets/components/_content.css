@@ -181,6 +181,8 @@
 
 .tyler-bio {
   background-color: white;
+  width: 70%;
+  padding-right: 0;
 }
 
 .tyler-bio h3 {
@@ -191,10 +193,36 @@
   background-image: url("https://cdn.buttercms.com/RQxJB6pBTrmdIxRS2Oas");
   background-size: cover;
   background-position: center;
+  margin-right: 5vw;
   height: 350px;
-  width: 30%;
+  width: 40%;
 }
 
 .bio-content {
   width: 60%;
+}
+
+.more-card {
+  padding-top: 50px;
+  background-color: white;
+  width: 30%;
+  /*display: inline-grid;*/
+  text-align: center;
+  align-items: center;
+}
+
+.results-card {
+
+  background-color: #282727;
+
+}
+
+.result-photo {
+  height: 315px;
+  width: 300px;
+  background-image: url("https://cdn.buttercms.com/THQwdfyQWCfmpLJQCU3x");
+  background-size: cover;
+  background-position: center;
+  padding-right: 0;
+  margin-right: 0 !important;
 }
