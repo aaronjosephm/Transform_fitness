@@ -2,8 +2,14 @@
   background-color: rgba(196, 38, 38, 0.9);
   color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 15vh;
+}
+
+.about-content-banner img {
+  width: 50vw !important;
+  height: auto !important;
 }
 
 .about-content-banner h2 {
@@ -17,9 +23,28 @@
 
 .about-content {
   background-color: #111;
-  height: 40vh;
+  height: 600vh;
   color: white;
+  padding: 5vh;
 }
+
+.about-content img {
+  width: 50vw !important;
+  height: auto !important;
+  padding-bottom: 10vh;
+}
+
+.client {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.client-quote {
+  height: 100vh;
+  margin-left: 5vh;
+}
+
 
 .vote {
   display: flex;
