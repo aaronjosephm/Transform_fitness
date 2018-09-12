@@ -46,8 +46,6 @@
 }
 
 
-
-
 .vote {
   display: flex;
   justify-content: left;
@@ -75,4 +73,95 @@
 
 .blog-container p, h3 {
   color: white !important;
+}
+
+.quote {
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("banner1");
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.quote h1 {
+  font-family: "IBM Plex Sans";
+  font-size: 30px;
+  color: white;
+}
+
+.about-link a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.about-link {
+
+}
+
+.about-link a:hover {
+  text-decoration: none;
+}
+
+.about-link-content {
+  text-align: center;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+
+.about-link-content:hover {
+  color: red;
+  transition: all 0.2s ease 0s;
+}
+
+.landing-contact-banner {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.landing-contact-banner h1 {
+  margin-bottom: 0;
+}
+
+.landing-contact {
+  background-color: #282727;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.landing-contact-photo {
+  background-image: asset-url("contact-landing");
+  background-size: cover;
+  width: 350px;
+  height: 500px;
+}
+
+.landing-contact-form {
+
+}
+
+.landing-testimonials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.landing-testimonial-card1 {
+  background-image: url("https://cdn.buttercms.com/THQwdfyQWCfmpLJQCU3x");
+  background-size: cover;
+  height: 400px;
+}
+
+.landing-testimonial-card2 {
+  background-image: url("https://cdn.buttercms.com/RSTyXfGQStmMGzDMW0c3");
+  background-size: cover;
+  height: 400px;
+}
+
+.landing-testimonial-card3 {
+  background-image: url("https://cdn.buttercms.com/mBTzNDTcRl6zSVv7T6h4");
+  background-size: cover;
+  height: 400px;
 }

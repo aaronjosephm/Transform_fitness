@@ -46,7 +46,9 @@
 }
 
 .landing-card1 {
-  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("mealbanner");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("landing2");
+  background-position: center;
+  background-size: cover;
   height: 300px;
   padding-top: 20px;
   border-left: solid 10px;
@@ -56,6 +58,8 @@
 
 .landing-card2 {
   background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("mealbanner");
+  background-size: cover;
+  background-position: center;
   height: 300px;
   padding-top: 20px;
   border-left: solid 10px;
@@ -64,7 +68,9 @@
 }
 
 .landing-card3 {
-  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("mealbanner");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), asset-url("landing3");
+  background-size: cover;
+  background-position: center;
   height: 300px;
   padding-top: 20px;
   border-left: solid 10px;
