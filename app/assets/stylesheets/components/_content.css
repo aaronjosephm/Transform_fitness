@@ -37,7 +37,7 @@
 .client {
   display: flex;
   justify-content: space-between;
-  height: 600px;
+  height: 650px;
 }
 
 .client-quote {
