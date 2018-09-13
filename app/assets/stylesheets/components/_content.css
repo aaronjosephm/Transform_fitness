@@ -77,6 +77,8 @@
 
 .quote {
   background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), url("https://cdn.buttercms.com/nj99dCRQRRSEbSLBVjvj");
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   background-size: cover;
   height: 300px;
   text-align: center;
@@ -96,7 +98,8 @@
 }
 
 .about-link {
-
+  border-bottom: 1px solid;
+  border-color: black;
 }
 
 .about-link a:hover {
@@ -105,9 +108,11 @@
 
 .about-link-content {
   text-align: center;
-  margin-top: 3vh;
+  margin-top: 3vw;
   display: flex;
   justify-content: center;
+  align-items: center;
+
 }
 
 .about-link-content:hover {
@@ -226,3 +231,6 @@
   padding-right: 0;
   margin-right: 0 !important;
 }
+
+/*testing*/
+

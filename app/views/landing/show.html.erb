@@ -58,11 +58,14 @@
   </div>
   <div class="about-link">
     <%= link_to about_path do %>
-      <div class="about-link-content">
-        <h4>WANT TO KNOW MORE? </h4>
-        <h4 style="color: red;">>></h4>
-      </div>
+      <br>
+        <div class="row" style="display: flex; justify-content: center;">
+          <button type="button" class="started-button" style="border-color: black !important;" data-toggle="modal" data-target="#exampleModal">
+            <strong>WANT TO KNOW MORE?</strong>
+          </button>
+        </div>
     <% end %>
+    <br>
   </div>
 </div>
 
@@ -71,7 +74,7 @@
 </div>
 
 <div class="landing-contact-banner">
-  <h1>SIGN UP TODAY FOR A FREE CONSULTATION!</h1>
+  <h1><strong>SIGN UP TODAY FOR A FREE CONSULTATION!</strong></h1>
 </div>
 
 <div class="landing-contact">
