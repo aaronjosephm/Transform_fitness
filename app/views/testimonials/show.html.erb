@@ -12,11 +12,9 @@
   <div class="container">
   <div class="row">
     <% @images.each_with_index do |image, index| %>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="card">
             <div class="card-image" style="background-image: url(<%= image %>);">
-              <div class="card-image-gradient">
-              </div>
             </div>
             <div class="card-content">
               <p><%= @quotes[index] %></p>

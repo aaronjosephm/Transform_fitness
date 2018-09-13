@@ -165,7 +165,7 @@
 }
 
 .card-image {
-  width: 100%;
+  width: 40%;
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -177,6 +177,8 @@
   margin-bottom: 10px;
   border-radius: 0px;
   letter-spacing: 1px;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 .card-content {
