@@ -10,19 +10,19 @@
 </div>
 <div class="about-content">
   <div class="container">
-  <div class="row">
-    <% @images.each_with_index do |image, index| %>
-      <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="card">
-            <div class="card-image" style="background-image: url(<%= image %>);">
-            </div>
-            <div class="card-content">
-              <p><%= @quotes[index] %></p>
-            </div>
-          </div>
-          <p></p>
+  <% @images.each_with_index do |image, index| %>
+    <div class="row" style="margin-bottom: 5vw;">
+      <div class="col-xs-5 col-sm-5 col-md-5">
+        <div class="card-image" style="background-image: url(<%= image %>);">
+        </div>
       </div>
-    <% end %>
+      <div class="col-xs-7 col-sm-7 col-md-7">
+        <div class="card-content">
+          <p><%= @quotes[index] %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
   </div>
 </div>
-</div>
+
