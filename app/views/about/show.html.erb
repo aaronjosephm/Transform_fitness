@@ -1,17 +1,22 @@
 <div class="about-banner">
   <div class="container">
-    <div class="row" style="display: flex; justify-content: center;">
+    <div class="row" style="display: flex; justify-content: center; border-bottom: solid 1px; border-color: white;">
       <h2>WHAT WE'RE ABOUT</h2>
+
+    </div>
+
+    <div class="row" style="display: flex; justify-content: center; margin-top: 1vw;">
+      <h3 style="letter-spacing: 3px;">FITNESS PLANS TAILORED FOR YOU!</h3>
     </div>
 
   </div>
 </div>
 
 <div class="about-content-banner">
-  <h2>FITNESS PLANS TAILORED FOR YOU!</h2>
+
 </div>
 
-<div class="bio-card" style="display: flex; justify-content: space-between;">
+<div class="bio-card" style="display: flex; justify-content: space-between; padding-bottom: 5vw; background-color: white;">
   <div class="tyler-bio">
     <div class="logo-about">
       <%= image_tag "logo1.png", size: "100x100" %>
@@ -32,51 +37,21 @@
     </div>
   </div>
   <div class="more-card">
-
-    <div class="button-cluster">
-      <h1 style="text-decoration: underline;">More info:</h1>
-      <div class="container">
-        <div class="meal-button">
-        </div>
-      </div>
-      <div class="container">
-        <div class="fitness-button">
-        </div>
-      </div>
-    </div>
     <div class="container" style="margin-top: 20px !important;">
-
-
     <div class="result-photo">
     </div>
-
-
     </div>
+    <%= link_to testimonials_path do %>
+      <br>
+        <div class="row" style="display: flex; justify-content: center;">
+          <button type="button" class="started-button" style="border-color: black !important;">
+            <strong>RESULTS</strong>
+          </button>
+        </div>
+    <% end %>
   </div>
 </div>
 
-<div class="about-card">
-  <div class="about-photo-card1">
-  </div>
-  <div class="about-card-info">
-    <h1>WHAT TO EXPECT:</h1>
-  </div>
-</div>
 
-<div class="about-card">
-  <div class="about-card-info">
-    <h1>WHAT TO EXPECT:</h1>
-  </div>
-  <div class="about-photo-card2">
-  </div>
-</div>
-
-<div class="about-card">
-  <div class="about-photo-card3">
-  </div>
-  <div class="about-card-info">
-
-  </div>
-</div>
 
 

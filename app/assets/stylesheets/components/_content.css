@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+
 }
 
 .about-content-banner img {
@@ -121,7 +121,8 @@
 }
 
 .landing-contact-banner {
-  background-color: white;
+  background-color: rgba(196, 38, 38, 0.9);
+  color: white;
   text-align: center;
   margin-bottom: 0;
 }
