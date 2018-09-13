@@ -1,4 +1,4 @@
-<div class="navbar-wagon">
+<!-- <div class="navbar-wagon">
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <%= link_to root_path do %>
       <%= image_tag "logo1.png", size: "60x60" %>
@@ -29,8 +29,56 @@
       </div>
     <% end %>
   </div>
-</div>
+</div> -->
 
+
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="border-color: red !important; width: 100%; background-color: #282727 !important;">
+  <%= link_to root_path do %>
+      <%= image_tag "nav_logo.png", size: "220x60" %>
+
+    <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+  <div class="collapse navbar-collapse" style="text-align: right !important;" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <%= link_to about_path do %>
+          <div class="nav-button">
+            ABOUT
+          </div>
+        <% end %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to contact_path do %>
+          <div class="nav-button">
+            CONTACT
+          </div>
+        <% end %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to testimonials_path do %>
+          <div class="nav-button">
+            TESTIMONIALS
+          </div>
+        <% end %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to blog_path do %>
+          <div class="nav-button">
+            BLOG
+          </div>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
 
