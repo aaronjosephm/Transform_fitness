@@ -36,13 +36,12 @@
 .client {
   display: flex;
   justify-content: center;
-  height: 50vw;
+  height: 25vw;
   margin-bottom: 5vw;
   width: 100%;
 }
 
 .client-quote {
-  margin-left: 5vh;
   background-color: white;
   color: black !important;
   padding: 5vw;

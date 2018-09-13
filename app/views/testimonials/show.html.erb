@@ -8,49 +8,23 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 <div class="about-content">
-  <div class="client">
-    <div class="client-picture">
-
-    </div>
-    <!-- <img src=<%= @testimonialspage.before_after1 %>  > -->
-    <div class="client-quote">
-      <p>"<%= @testimonialspage.aaron_quote %>"</p>
-    </div>
+  <div class="container">
+  <div class="row">
+    <% @images.each_with_index do |image, index| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card">
+            <div class="card-image" style="background-image: url(<%= image %>);">
+              <div class="card-image-gradient">
+              </div>
+            </div>
+            <div class="card-content">
+              <p><%= @quotes[index] %></p>
+            </div>
+          </div>
+          <p></p>
+      </div>
+    <% end %>
   </div>
-  <div class="client">
-    <img src=<%= @testimonialspage.before_after2 %>  >
-    <div class="client-quote">
-      <p>"<%= @testimonialspage.aaron_quote %>"</p>
-    </div>
-  </div>
-  <div class="client">
-    <img src=<%= @testimonialspage.before_after3 %>  >
-    <div class="client-quote">
-      <p>"<%= @testimonialspage.aaron_quote %>"</p>
-    </div>
-  </div>
-  <div class="client">
-    <img src=<%= @testimonialspage.before_after4 %>  >
-    <div class="client-quote">
-      <p>"<%= @testimonialspage.aaron_quote %>"</p>
-    </div>
-  </div>
-  <div class="client">
-    <img src=<%= @testimonialspage.before_after5 %>  >
-    <div class="client-quote">
-      <p>"<%= @testimonialspage.aaron_quote %>"</p>
-    </div>
-  </div>
-  <div class="client">
-    <img src=<%= @testimonialspage.before_after6 %>  >
-    <div class="client-quote">
-      <p>"<%= @testimonialspage.aaron_quote %>"</p>
-    </div>
-  </div>
+</div>
 </div>
