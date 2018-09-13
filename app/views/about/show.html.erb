@@ -12,20 +12,50 @@
   </div>
 </div>
 
-<div class="about-content-banner">
+<style>
 
-</div>
+@media (max-width: 770px) {
+  .about-banner h2 {
+    font-size: 25px !important;
+  }
+
+  .about-banner h3 {
+    font-size: 15px !important;
+  }
+
+  .bio-card h2 {
+    font-size: 15px !important;
+  }
+
+  .bio-card h1 {
+    font-size: 15px !important;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .about-banner h2 {
+    font-size: 20px !important;
+  }
+
+  .about-banner h3 {
+    font-size: 10px !important;
+  }
+
+}
+
+</style>
 
 <div class="bio-card" style="display: flex; justify-content: space-between; padding-bottom: 5vw; background-color: white;">
   <div class="tyler-bio">
-    <div class="logo-about">
+    <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
       <%= image_tag "logo1.png", size: "100x100" %>
-      <h1 style="padding-left: 30px;">TRANSFORMATION FITNESS</h1>
+      <h1 style="margin-left: 30px; letter-spacing: 2px;"><strong><h1 style="color: #C42626; letter-spacing: 2px;"><strong>TRANSFORMATION</strong></h1> FITNESS</strong></h1>
     </div>
-    <div class="noname" style="border-color: grey; border-bottom: solid 1px; margin-right: 10vw; margin-left: 5vw;"
-      <h1 style="margin-right: 5vw; margin-left: 5vw;"><strong>Transformation is a process, and as life happens there are tons of ups and downs. It's a journey of discovery - there are moments on mountaintops and moments in deep valleys of despair.</strong></h1>
+    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center; align-items: center; margin-top: 1vw;">
+      <h1 style="margin-right: 5vw; margin-left: 5vw; border-color: black; border-bottom: solid 1px;"><strong>Transformation is a process, and as life happens there are tons of ups and downs. It's a journey of discovery - there are moments on mountaintops and moments in deep valleys of despair.</strong></h1>
+      <h3 style="margin-left: 5vw; color: #C42626 !important;""><strong>THE JOURNEY STARTS WITH YOU!</strong></h3>
     </div>
-    <h3 style="margin-left: 5vw;"">THE JOURNEY STARTS WITH YOU!</h3>
     <div class="bio-container" >
       <div class="tyler-portrait">
       </div>
