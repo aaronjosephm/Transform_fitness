@@ -11,14 +11,14 @@
 <div class="about-content">
   <div class="container">
   <% @images.each_with_index do |image, index| %>
-    <div class="row" style="margin-bottom: 5vw; background-color: white;">
-      <div class="col-xs-5 col-sm-5 col-md-5">
+    <div class="row" style="margin-bottom: 5vw; background-color: white; border-radius: 1%; padding: 1vw;">
+      <div class="col-xs-5 col-sm-5 col-md-5" style="padding: 0 !important;">
         <div class="card-image" style="background-image: url(<%= image %>);">
         </div>
       </div>
       <div class="col-xs-7 col-sm-7 col-md-7">
         <div class="card-content">
-          <p><%= @quotes[index] %></p>
+          <p><strong>"<%= @quotes[index] %>"</strong></p>
         </div>
       </div>
     </div>
