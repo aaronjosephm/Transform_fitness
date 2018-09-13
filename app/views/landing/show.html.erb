@@ -35,13 +35,21 @@
   transition: all 0.9s ease 0s;
 }
 
-@media (max-width: 528px) {
+@media (max-width: 550px) {
   .landing-banner h1 {
     font-size: 30px !important;
   }
 
   .landing-banner h2 {
     font-size: 20px !important;
+  }
+
+  .landing-container h2 {
+    font-size: 15px !important;
+  }
+
+  .landing-container h1 {
+    font-size: 15px !important;
   }
 }
 
@@ -52,25 +60,25 @@
 <div class="landing-container">
   <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
     <%= image_tag "logo1.png", size: "100x100" %>
-    <h1 style="margin-left: 30px;">Transformation Fitness</h1>
+    <h1 style="margin-left: 30px; letter-spacing: 2px;"><strong><h1 style="color: #C42626; letter-spacing: 2px;"><strong>TRANSFORMATION</strong></h1> FITNESS</strong></h1>
   </div>
   <div class="landing-container-header" style="padding-left: 10vh; padding-right: 10vh;">
-    <p><strong>Transformation fitness</strong> combines top knowledge of nutrition, and targeted workout routines. With these kept in mind you can ensure that you'll see results quickly, and effectively! <strong style="color: red;">Be ready for a new you.</strong></p>
+    <p><strong>Transformation Fitness</strong> combines top knowledge of nutrition, and targeted workout routines. With these kept in mind you can ensure that you'll see results quickly, and effectively! <strong style="color: red;">Be ready for a new you.</strong></p>
   </div>
   <div class="row align-items-start" style="align-items: center;">
-    <div class="col-sm-12 col-md-4 col-lg-4" style="text-align: center; align-items: center;">
+    <div class="col-sm-12 col-md-4 col-lg-4" style="text-align: center; align-items: center; margin-top: 1vw;">
       <i class="fas fa-dumbbell"></i>
       <p>Our workout plans will push you to your limits, but that's the goal. In order to reach serious results one must push themselves out of their comfort zone constantly.</p>
       <div class="landing-card1" style="text-align: center;">
       </div>
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-4" style="text-align: center;">
+    <div class="col-sm-12 col-md-4 col-lg-4" style="text-align: center; margin-top: 1vw;">
       <i class="fas fa-utensils"></i>
       <p>Everyone has a different body type or reacts differently to specific foods. That's why at Transformation Fitness we find the right meal plan for you which would take into account important factors such as your metabolism, body-type, and your main goals.</p>
       <div class="landing-card2" style="text-align: center;">
       </div>
     </div>
-    <div class="col-sm-12 col-md-4 col-lg-4" style="text-align: center;">
+    <div class="col-sm-12 col-md-4 col-lg-4" style="text-align: center; margin-top: 1vw;">
       <i class="fas fa-users"></i>
       <p>Here at Transformation Fitness we understand that everyone is at different fitness levels. We do not cater to any particular type of athlete, and we provide training services for all types of people.</p>
       <div class="landing-card3" style="text-align: center;">
@@ -90,9 +98,7 @@
     <%= link_to about_path do %>
       <br>
         <div class="row" style="display: flex; justify-content: center;">
-          <button type="button" class="started-button" style="border-color: black !important;" data-toggle="modal" data-target="#exampleModal">
-            <strong>WANT TO KNOW MORE?</strong>
-          </button>
+          <button type="button" class="btn btn-danger" style="border-radius: 0 !important; background-color: #C42626 !important;"><strong>WANT TO KNOW MORE?</strong></button>
         </div>
     <% end %>
     <br>
