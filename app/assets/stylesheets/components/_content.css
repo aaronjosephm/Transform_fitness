@@ -23,7 +23,6 @@
 
 .about-content {
   background-color: #111;
-  height: 600vh;
   color: white;
   padding: 5vh;
 }
@@ -36,13 +35,31 @@
 
 .client {
   display: flex;
-  justify-content: space-between;
-  height: 650px;
+  justify-content: center;
+  height: 50vw;
+  margin-bottom: 5vw;
+  width: 100%;
 }
 
 .client-quote {
-  height: 100vh;
   margin-left: 5vh;
+  background-color: white;
+  color: black !important;
+  padding: 5vw;
+  width: 50%;
+}
+
+.client-quote p {
+  color: black !important;
+}
+
+.client-picture {
+  background-image: url("https://cdn.buttercms.com/mBTzNDTcRl6zSVv7T6h4");
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  height: 50vw;
+  width: 50%;
 }
 
 
