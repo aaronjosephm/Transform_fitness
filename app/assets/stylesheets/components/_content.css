@@ -215,13 +215,11 @@
   background-image: url("https://cdn.buttercms.com/RQxJB6pBTrmdIxRS2Oas");
   background-size: cover;
   background-position: center;
-  margin-right: 5vw;
-  height: 350px;
-  width: 40%;
+  height: 500px;
 }
 
-.bio-content {
-  width: 60%;
+.bio-content p {
+  color: black !important;
 }
 
 .more-card {
