@@ -9,37 +9,74 @@
   </div>
 </div>
 
+<style>
+
+@media (max-width: 770px) {
+  .contact-banner h2 {
+    font-size: 25px !important;
+  }
+
+  .contact-banner h3 {
+    font-size: 10px !important;
+  }
+
+  .landing-container h2 {
+    font-size: 15px !important;
+  }
+
+  .landing-container h1 {
+    font-size: 15px !important;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .about-banner h2 {
+    font-size: 20px !important;
+  }
+
+  .about-banner h3 {
+    font-size: 10px !important;
+  }
+
+}
+
+.btn:hover {
+  opacity: 0.8 !important;
+  transition: all 0.9s ease 0s;
+}
+
+</style>
+
 
 <div class="landing-container">
   <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
     <%= image_tag "logo1.png", size: "100x100" %>
     <h1 style="margin-left: 30px; letter-spacing: 2px;"><strong><h1 style="color: #C42626; letter-spacing: 2px;"><strong>TRANSFORMATION</strong></h1> FITNESS</strong></h1>
   </div>
-</div>
-<div class="landing-contact-form">
-    <form>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+
+  <div class="container">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input class="form-control" type="text" placeholder="First Last">
+          </div>
         </div>
-        <div class="form-group col-md-6">
-          <label for="inputPassword4">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message (optional)</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <button type="button" class="btn btn-secondary btn-lg btn-block" style="border-radius: 0 !important; background-color: #C42626 !important; letter-spacing: 2px;">SEND!</button>
+      </form>
+  </div>
 </div>
 
 
-<div class="about-content-banner">
-  <h2>OUR LOCATION:</h2>
-</div>
 
 <div class="sign-up">
 </div>
