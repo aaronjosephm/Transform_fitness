@@ -9,6 +9,64 @@
   </div>
 </div>
 
+<style>
+
+.btn:hover {
+  opacity: 0.8 !important;
+  transition: all 0.9s ease 0s;
+}
+
+@media (max-width: 550px) {
+  .contact-banner h2 {
+    font-size: 25px !important;
+  }
+
+  .contact-banner h3 {
+    font-size: 10px !important;
+  }
+
+  .landing-container h2 {
+    font-size: 15px !important;
+  }
+
+  .landing-container h1 {
+    font-size: 15px !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .card-image {
+    height: 300px;
+  }
+
+  @media (max-width: 768px) {
+  .card-image {
+    height: 200px;
+  }
+
+  @media (max-width: 575px) {
+  .card-image {
+    height: 450px;
+  }
+
+   @media (max-width: 516px) {
+  .card-image {
+    height: 350px;
+  }
+
+   @media (max-width: 414px) {
+  .card-image {
+    height: 300px;
+  }
+
+  @media (max-width: 360px) {
+  .card-image {
+    height: 250px;
+  }
+}
+</style>
+
 <div class="landing-container">
   <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
     <%= image_tag "logo1.png", size: "100x100" %>
@@ -26,6 +84,14 @@
       <div class="col-xs-7 col-sm-7 col-md-7">
         <div class="card-content">
           <p><strong>"<%= @quotes[index] %>"</strong></p>
+          <!-- <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="color: red !important;"><strong>Name</strong></p> -->
+
         </div>
       </div>
     </div>
