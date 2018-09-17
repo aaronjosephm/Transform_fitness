@@ -2,6 +2,8 @@ require_relative 'boot'
 
 require 'rails/all'
 
+
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -11,7 +13,8 @@ module TfitnessRes
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
-
+    config.action_mailer.delivery_method = :postmark
+    config.action_mailer.postmark_settings = { :api_token => "fe39fb4f-e35c-4aa1-bcbc-24800843b5da" }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
