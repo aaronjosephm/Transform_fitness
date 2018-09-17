@@ -24,6 +24,14 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'buttercms-rails'
+
+gem 'mail_form'
+
+gem 'devise'
+
+gem "letter_opener", group: :development
+
+gem 'dotenv-rails', groups: [:development, :test]
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
