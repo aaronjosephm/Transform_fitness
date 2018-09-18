@@ -18,12 +18,12 @@ class UserMailer < ApplicationMailer
   #   mail(to: @user.email, subject: 'Welcome to Le Wagon')
   # end
 
-  def test
+  def test(email)
     mail(
-      :subject => 'Hello from Postmark',
-      :to  => 'aaronjosephm@gmail.com',
-      :from => 'administrator@siphercatta.com',
-      :html_body => '<strong>Hello</strong> dear Postmark user.',
-      :track_opens => 'true')
+      subject: 'Hello from Postmark',
+      to: email,
+      from: 'administrator@siphercatta.com',
+      html_body: '<strong>Hello</strong> dear Postmark user.',
+      track_opens: 'true')
   end
 end

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'contact#show'
 
+  post '/contact', to: 'contact#create'
+
   get '/about', to: 'about#show'
 
   get '/testimonials', to: 'testimonials#show'
