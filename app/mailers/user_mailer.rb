@@ -12,9 +12,18 @@ class UserMailer < ApplicationMailer
     # This will render a view in `app/views/user_mailer`!
   end
 
-  def message(user)
-    @user = user  # Instance variable => available in view
+  # def message(user)
+  #   @user = user  # Instance variable => available in view
 
-    mail(to: @user.email, subject: 'Welcome to Le Wagon')
+  #   mail(to: @user.email, subject: 'Welcome to Le Wagon')
+  # end
+
+  def test
+    mail(
+      :subject => 'Hello from Postmark',
+      :to  => 'administrator@siphercatta.com',
+      :from => 'administrator@siphercatta.com',
+      :html_body => '<strong>Hello</strong> dear Postmark user.',
+      :track_opens => 'true')
   end
 end
