@@ -18,9 +18,10 @@ class UserMailer < ApplicationMailer
   #   mail(to: @user.email, subject: 'Welcome to Le Wagon')
   # end
 
-  def test(email)
+  def test(email, message, name)
+    @user = {email: email, message: message, name: name}
     mail(
-      subject: 'Hello from Postmark',
+      subject: 'Transformation Fitness welcomes you!',
       to: email,
       from: 'administrator@siphercatta.com',
       html_body: '<strong>Hello</strong> dear Postmark user.',

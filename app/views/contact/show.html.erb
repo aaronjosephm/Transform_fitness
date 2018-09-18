@@ -1,3 +1,5 @@
+
+<%= render 'shared/flashes' %>
 <div class="contact-banner">
   <div class="container">
     <div class="row" style="display: flex; justify-content: center; border-bottom: solid 1px; border-color: white;">
@@ -8,7 +10,6 @@
     </div>
   </div>
 </div>
-
 <style>
 
 @media (max-width: 770px) {
@@ -61,8 +62,7 @@
     </div>
 
   <div class="container">
-      <form action="/contact" method="post">
-        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= form_tag(contact_path) do %>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
@@ -79,7 +79,7 @@
           <textarea class="form-control" type="text" name="message" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-secondary btn-lg btn-block" style="border-radius: 0 !important; background-color: #C42626 !important; letter-spacing: 2px;">SEND!</button>
-      </form>
+      <% end %>
   </div>
 </div>
 
