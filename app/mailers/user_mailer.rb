@@ -20,6 +20,7 @@ class UserMailer < ApplicationMailer
 
   def test(email, message, name)
     @user = {email: email, message: message, name: name}
+
     mail(
       subject: 'Transformation Fitness welcomes you!',
       to: email,
