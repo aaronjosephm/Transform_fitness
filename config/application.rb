@@ -13,8 +13,6 @@ module TfitnessRes
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
-    config.action_mailer.delivery_method = :postmark
-    config.action_mailer.postmark_settings = { :api_token => "120e9b8f-caa9-4bb0-839a-a2c7ecb88acf" }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

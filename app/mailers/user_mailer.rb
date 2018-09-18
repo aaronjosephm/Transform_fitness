@@ -21,7 +21,7 @@ class UserMailer < ApplicationMailer
   def test
     mail(
       :subject => 'Hello from Postmark',
-      :to  => 'administrator@siphercatta.com',
+      :to  => 'aaronjosephm@gmail.com',
       :from => 'administrator@siphercatta.com',
       :html_body => '<strong>Hello</strong> dear Postmark user.',
       :track_opens => 'true')

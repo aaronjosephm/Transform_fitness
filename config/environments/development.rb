@@ -52,8 +52,9 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  config.action_mailer.delivery_method = :letter_opener
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { :api_token => "120e9b8f-caa9-4bb0-839a-a2c7ecb88acf" }
+
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
