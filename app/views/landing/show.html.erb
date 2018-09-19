@@ -28,11 +28,76 @@
   </div>
 </div>
 
+<div class="landing-container">
+  <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
+    <%= image_tag "logo1.png", size: "100x100" %>
+    <h1 style="margin-left: 30px; letter-spacing: 2px;"><strong><h1 style="color: #C42626; letter-spacing: 2px;"><strong>TRANSFORMATION</strong></h1> FITNESS</strong></h1>
+  </div>
+</div>
+
+<div class="about-content">
+    <div class="programs col-sm-12 col-md-12 col-lg-12" style="text-align: center; align-items: center; margin-top: 1vw;">
+      <h1 style="letter-spacing: 2px; margin-right: 5vw; margin-left: 5vw; border-color: black; border-bottom: solid 1px;"><strong>PROGRAMS</strong></h1>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+      <div class="program-card col-sm-12 col-md-12 col-lg-6">
+        <div class="card-outline">
+          <div class="card-details">
+            <h3 style="padding-top: 5px; padding-bottom: 5px; background-color: red; letter-spacing: 1px; text-align: center;"><strong><i class="fas fa-users"></i> GROUP TRAINING</strong></h3>
+            <p style="text-align: center; font-style: italic;"> Semi Private Training (2-4 clients)</p>
+            <br>
+            <h3 style="text-align: center;">What's included?</h3>
+            <ul>
+              <li>Small group classes led by our expert trainers.</li>
+              <li>Our customized flexible meal program.</li>
+            </ul>
+            <div class="row" style="display: flex; justify-content: center;">
+              <button type="button" class="btn btn-danger" style="background-color: grey !important;"><strong>LEARN MORE >></strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-card col-sm-12 col-md-12 col-lg-6">
+        <div class="card-outline">
+          <div class="card-details">
+            <h3 style="padding-top: 5px; padding-bottom: 5px; background-color: red; letter-spacing: 1px; text-align: center;"><strong><i class="fas fa-user"></i> INDIVIDUAL TRAINING</strong></h3>
+            <p style="text-align: center; font-style: italic;"> One on one training, and the most in depth and personalized training program we offer.</p>
+            <h3 style="text-align: center;">What's included?</h3>
+            <ul>
+              <li>One on one training with our expert trainers</li>
+              <li>Fully customized training program.</li>
+            </ul>
+            <div class="row" style="display: flex; justify-content: center;">
+              <button type="button" class="btn btn-danger" style="background-color: grey !important;"><strong>LEARN MORE >></strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <style>
 
 .btn:hover {
   opacity: 0.8 !important;
   transition: all 0.9s ease 0s;
+}
+
+@media (max-width: 390px) {
+  .program-card {
+    height: 900px;
+  }
+
+  .card-outline {
+    width: 300px;
+    height: 900px;
+  }
+
+  .card-details {
+    width: 280px;
+    height: 800px;
+  }
+
 }
 
 @media (max-width: 550px) {
@@ -51,6 +116,16 @@
   .landing-container h1 {
     font-size: 15px !important;
   }
+}
+
+@media (max-width: 425px) {
+  .map {
+    height: 300px !important;
+  }
+  .order-card-img {
+    height: 300px !important;
+  }
+
 }
 
 
