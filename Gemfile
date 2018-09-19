@@ -31,6 +31,12 @@ gem 'mail_form'
 
 gem 'devise'
 
+gem 'geocoder'
+
+gem 'jquery-rails'
+
+gem 'webpacker'
+
 gem "letter_opener", group: :development
 
 gem 'dotenv-rails', groups: [:development, :test]
