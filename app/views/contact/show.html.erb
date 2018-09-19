@@ -113,19 +113,7 @@
 </div>
 
 
-
-<div class="sign-up">
-</div>
-
-<div class="info-container">
-  <div class="location">
-  </div>
-
-  <div class="contact-info">
-  </div>
-</div>
-
-<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=directions&key=AIzaSyAiHk_MLYlOTiPYCNfnItVZPjkAedouGdQ" %>
+<%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=directions&key=#{ENV["GOOGLE_API_KEY"]}" %>
 
 <%= javascript_pack_tag 'application' %>
 <%= javascript_pack_tag "map" %>
