@@ -247,5 +247,29 @@
   margin-right: 0 !important;
 }
 
+.program-card {
+  height: 600px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.card-outline {
+  height: 550px;
+  width: 450px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-details {
+  height: 530px;
+  width: 430px;
+  background-color: #C42626;
+
+
+}
 /*testing*/
 
