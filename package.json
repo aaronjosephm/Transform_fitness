@@ -3,7 +3,10 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
-    "gmaps": "^0.4.24"
+    "bootstrap": "3",
+    "default-passive-events": "^1.0.10",
+    "gmaps": "^0.4.24",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
