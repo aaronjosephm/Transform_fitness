@@ -1,3 +1,7 @@
+
+
+
+
 <div class="article-title-container">
   <div class="article-banner">
     <h1> Blog of the day: </h1>
@@ -5,6 +9,27 @@
     <p>TYLER ROSANO | <%= @post.created.to_date %></p>
   </div>
 </div>
+
+<style>
+
+@media (max-width: 550px) {
+  .landing-banner h1 {
+    font-size: 30px !important;
+  }
+
+  .landing-banner h2 {
+    font-size: 20px !important;
+  }
+
+  .landing-container h2 {
+    font-size: 15px !important;
+  }
+
+  .landing-container h1 {
+    font-size: 15px !important;
+  }
+}
+</style>
 
 <div class="blog-content" style="background-image: -webkit-linear-gradient(150deg, #282727 35%, #111 35%);">
   <div class="blog-container" style="background-image: -webkit-linear-gradient(150deg, #282727 35%, #111 35%); width: 80%;">
