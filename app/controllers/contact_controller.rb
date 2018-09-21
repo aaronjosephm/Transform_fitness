@@ -10,10 +10,14 @@ class ContactController < ApplicationController
 
   def create
     name = params[:name]
-    message = params[:message]
+    question1 = params[:question1]
+    question2 = params[:question2]
+    question3 = params[:question3]
+    level = params[:level]
+    option = params[:gridRadios]
     email = params[:email]
-    if UserMailer.test(email, message, name).deliver_now
-      flash[:alert] = "Your message has been sent! We will get back to you shortly!"
+    if UserMailer.form(email, question1, question2, question3, level, option, name).deliver_now
+      flash[:alert] = "Your form has been sent! We will get back to you shortly!"
       redirect_to contact_path
     else
       flash[:alert] = "Please fill out required fields!"

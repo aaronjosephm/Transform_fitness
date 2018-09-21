@@ -86,19 +86,19 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">What are your health and fitness goals over the next 90 days? (optional)</label>
-          <textarea class="form-control" type="text" name="message" rows="3"></textarea>
-        </div>
-         <div class="form-group">
-          <label for="exampleFormControlTextarea1">What have you tried before that has worked and not worked? (optional)</label>
           <textarea class="form-control" type="text" name="question1" rows="3"></textarea>
         </div>
          <div class="form-group">
-          <label for="exampleFormControlTextarea1">Honestly, why do you think you haven't hit your goals yet? (optional)</label>
+          <label for="exampleFormControlTextarea1">What have you tried before that has worked and not worked? (optional)</label>
           <textarea class="form-control" type="text" name="question2" rows="3"></textarea>
+        </div>
+         <div class="form-group">
+          <label for="exampleFormControlTextarea1">Honestly, why do you think you haven't hit your goals yet? (optional)</label>
+          <textarea class="form-control" type="text" name="question3" rows="3"></textarea>
         </div>
          <label for="exampleFormControlTextarea1">On a scale of 1-10, 10 being the highest, how serious are you about making a change?</label>
          <br>
-        <select class="form-control form-control-sm">
+        <select class="form-control form-control-sm" name="level">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -114,13 +114,13 @@
         <br>
         <label for="exampleFormControlTextarea1">Are you ready to invest in yourself TODAY?</label>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="ready for change" checked>
           <label class="form-check-label" for="gridRadios1">
             Yes I'm ready to invest in myself and transform with Transformation F1tness Today!
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="not ready for a big change">
           <label class="form-check-label" for="gridRadios2">
             No I want to stay the same.
           </label>
