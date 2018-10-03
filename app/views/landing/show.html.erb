@@ -46,16 +46,14 @@
         <div class="card-outline" style="height: 300px;">
           <div class="card-details" style="height: 300px;">
             <h3 style="padding-top: 5px; padding-bottom: 5px; background-color: red; letter-spacing: 1px; text-align: center;"><strong><i class="fas fa-users"></i> GROUP TRAINING</strong></h3>
-            <p style="text-align: center; font-style: italic;"> Semi Private Training (2-4 clients)</p>
+            <p style="text-align: center; font-style: italic; padding-right: 15px; padding-left: 15px">Our semi Private Training (2-4 clients) includes fully customized programs with group training.</p>
             <br>
             <h3 style="text-align: center;">What's included?</h3>
-            <ul>
-              <li>Small group classes led by our expert trainers.</li>
-              <li>Our customized flexible meal program.</li>
-            </ul>
+              <p style="text-align: center; margin-bottom: 0 !important;">- Small group classes led by our expert trainers.</p>
+              <p style="text-align: center;">- Our customized flexible meal program.</p>
             <div class="row" style="display: flex; justify-content: center;">
               <%= link_to about_path do %>
-                <button type="button" class="btn btn-danger" style="padding-left: 30px; padding-right: 30px; background-color: black !important;"><strong>LEARN MORE</strong></button>
+                <button type="button" class="btn btn-danger" style="letter-spacing: 1px; padding-left: 30px; padding-right: 30px; background-color: black !important;"><strong>LEARN MORE</strong></button>
               <% end %>
             </div>
           </div>
@@ -65,15 +63,14 @@
         <div class="card-outline" style="height: 300px;">
           <div class="card-details" style="height: 300px;">
             <h3 style="padding-top: 5px; padding-bottom: 5px; background-color: red; letter-spacing: 1px; text-align: center;"><strong><i class="fas fa-user"></i> INDIVIDUAL TRAINING</strong></h3>
-            <p style="text-align: center; font-style: italic;"> One on one training, and the most in depth and personalized training program we offer.</p>
+            <p style="text-align: center; font-style: italic; padding-right: 15px; padding-left: 15px"> Our one on one training is the most in depth and personalized training program we offer.</p>
+            <br>
             <h3 style="text-align: center;">What's included?</h3>
-            <ul>
-              <li>One on one training with our expert trainers</li>
-              <li>Fully customized training program.</li>
-            </ul>
+              <p style="text-align: center; margin-bottom: 0 !important;">- One on one training with our expert trainers</p>
+              <p style="text-align: center;">- Fully customized training program.</p>
             <div class="row" style="display: flex; justify-content: center;">
               <%= link_to about_path do %>
-                <button type="button" class="btn btn-danger" style="padding-left: 30px; padding-right: 30px; background-color: black !important;"><strong>LEARN MORE</strong></button>
+                <button type="button" class="btn btn-danger" style="letter-spacing: 1px; padding-left: 30px; padding-right: 30px; background-color: black !important;"><strong>LEARN MORE</strong></button>
               <% end %>
             </div>
           </div>
@@ -100,11 +97,29 @@
   }
 
   .card-details {
+    height: 300px !important;
+
+  }
+
+}
+
+@media (max-width: 442px) {
+  .card-details {
+    height: 350px !important;
+
+  }
+
+}
+
+@media (max-width: 405px) {
+  .card-details {
     height: 400px !important;
 
   }
 
 }
+
+
 
 @media (max-width: 390px) {
   .program-card {
@@ -118,6 +133,7 @@
 
   .card-details {
     width: 280px;
+    height: 420px !important;
 
   }
 
