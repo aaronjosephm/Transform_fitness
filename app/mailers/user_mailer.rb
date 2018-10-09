@@ -27,7 +27,7 @@ class UserMailer < ApplicationMailer
       mail(
         subject: 'Transformation Fitness welcomes you!',
         to: email,
-        from: 'administrator@siphercatta.com',
+        from: 'Fitcoach@tfithealthcoaching.com',
         html_body: '<strong>Hello</strong> dear Postmark user.',
         track_opens: 'true')
     end
@@ -41,11 +41,21 @@ class UserMailer < ApplicationMailer
       mail(
         subject: 'Transformation Fitness welcomes you!',
         to: email,
-        from: 'administrator@siphercatta.com',
+        from: 'Fitcoach@tfithealthcoaching.com',
         html_body: '<strong>Hello</strong> dear Postmark user.',
         track_opens: 'true')
 
     end
+  end
+
+  def admin_notify(email, question1, question2, question3, level, option, name)
+    admin = "Fitcoach@tfithealthcoaching.com"
+     mail(
+        subject: 'You have a new client interested!',
+        to: admin,
+        from: 'Fitcoach@tfithealthcoaching.com',
+        html_body: '<strong>Hello</strong> dear Postmark user.',
+        track_opens: 'true')
   end
 
   def notify
@@ -53,7 +63,7 @@ class UserMailer < ApplicationMailer
     mail(
         subject: 'You have a new client interested!',
         to: admin,
-        from: 'administrator@siphercatta.com',
+        from: 'Fitcoach@tfithealthcoaching.com',
         html_body: '<strong>Hello</strong> dear Postmark user.',
         track_opens: 'true')
   end
