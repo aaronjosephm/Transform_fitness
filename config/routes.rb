@@ -3,7 +3,13 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/landing', to: 'landing#show'
 
-  get '/blog', to: 'blog#show'
+
+
+  get '/blog', to: 'blog#blog_of_day'
+
+  get '/blogs', to: 'blog#index'
+
+  get '/blogs/:slug', to: 'blog#show', :as => :buttercms_post
 
   get '/contact', to: 'contact#show'
 
@@ -16,8 +22,6 @@ Rails.application.routes.draw do
   get '/testimonials', to: 'testimonials#show'
 
   root to: 'landing#show'
-
-
 
   # get '/about', to: 'pages#about'
 

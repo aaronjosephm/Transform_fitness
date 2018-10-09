@@ -1,9 +1,6 @@
-
-
-
-
 <div class="article-title-container">
   <div class="article-banner">
+    <h1> Blog of the day: </h1>
     <h1><%= @post.title.upcase %></h1>
     <p>TYLER ROSANO | <%= @post.created.to_date %></p>
   </div>
@@ -33,13 +30,23 @@
 <div class="blog-content" style="background-image: -webkit-linear-gradient(150deg, #282727 35%, #111 35%);">
   <div class="blog-container" style="background-image: -webkit-linear-gradient(150deg, #282727 35%, #111 35%); width: 80%;">
     <%= @post.body.html_safe %>
+
   </div>
+
+
+
 </div>
 
 <div class="landing-container">
   <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
+    <%= link_to blogs_path, method: :get do %>
+      <button type="button" class="btn" style="color: white; padding-left: 30px; padding-right: 30px; background-color: black !important;"><strong>PAST BLOGS </strong></button>
+    <% end %>
+  </div>
+  <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
     <%= image_tag "logo1.png", size: "100x100" %>
     <h1 style="margin-left: 30px; letter-spacing: 2px;"><strong><h1 style="color: #C42626; letter-spacing: 2px;"><strong>TRANSFORMATION</strong></h1> FITNESS</strong></h1>
+
   </div>
 </div>
 <div class="container" style="background-color: white;">
