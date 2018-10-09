@@ -3,9 +3,9 @@ Rails.application.configure do
   config.webpacker.check_yarn_integrity = false
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.action_mailer.delivery_method     = :postmark
-  config.action_mailer.postmark_settings   = { api_key:'b373f417-b5db-4935-81d5-21d81d6638fc' }
-  config.action_mailer.default_url_options = { host: "fitness-app-final.herokuapp.com" }
+  # config.action_mailer.delivery_method     = :postmark
+  # config.action_mailer.postmark_settings   = { api_key:'b373f417-b5db-4935-81d5-21d81d6638fc' }
+  # config.action_mailer.default_url_options = { host: "tfithealthcoaching.com" }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
