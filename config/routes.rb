@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   post '/contact', to: 'contact#create'
 
-  post '/landing', to: 'contact#create'
+  post '/landing', to: 'landing#create'
 
   get '/about', to: 'about#show'
 

@@ -1,4 +1,6 @@
 class ContactController < ApplicationController
+
+
   def show
     @contactpage = ButterCMS::Page.get('*', 'contact').data.fields
 
@@ -17,10 +19,11 @@ class ContactController < ApplicationController
     option = params[:gridRadios]
     email = params[:email]
     if UserMailer.form(email, question1, question2, question3, level, option, name).deliver_now
-      flash[:alert] = "Your form has been sent! We will get back to you shortly!"
+      flash[:notice] = "Your form has been sent! We will get back to you shortly!"
       redirect_to contact_path
     else
       flash[:alert] = "Please fill out required fields!"
+      # render js: "alert('The username to be displayed')"
       redirect_to contact_path
     end
     # respond_to do |format|

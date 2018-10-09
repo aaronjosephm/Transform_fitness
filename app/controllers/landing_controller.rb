@@ -10,7 +10,7 @@ class LandingController < ApplicationController
     message = params[:message]
     email = params[:email]
     if UserMailer.test(email, message, name).deliver_now
-      flash[:alert] = "Your message has been sent! We will get back to you shortly!"
+      flash[:notice] = "Your message has been sent! We will get back to you shortly!"
       redirect_to landing_path
     else
       flash[:alert] = "Please fill out required fields!"

@@ -1,4 +1,4 @@
-
+<%= render 'shared/flashes' %>
 <div class="landing-banner">
   <div class="container">
     <br>
@@ -244,7 +244,8 @@
     </div>
 
   <div class="container">
-      <%= form_tag(contact_path) do %>
+    <form action="/landing" data-remote="true" method="post">
+      <!-- <%= form_tag(contact_path) do %> -->
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">Email * (required)</label>
@@ -261,7 +262,8 @@
           <textarea class="form-control" type="text" name="message" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-secondary btn-lg btn-block" style="border-radius: 0 !important; background-color: #C42626 !important; letter-spacing: 2px;">SEND!</button>
-      <% end %>
+      <!-- <% end %> -->
+       </form>
   </div>
 
   <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center; align-items: center; margin-top: 1vw;">
