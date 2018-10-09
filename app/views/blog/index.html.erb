@@ -29,7 +29,7 @@
   <div class="blog-container" style="background-image: -webkit-linear-gradient(150deg, #282727 35%, #111 35%); width: 80%;">
     <% @posts.each do |post| %>
       <%= link_to buttercms_post_url(post.slug), method: :get do %>
-        <p><%= post.title %></p>
+        <h3><%= post.title %></h3>
       <% end %>
     <% end %>
   </div>
