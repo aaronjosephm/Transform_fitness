@@ -59,7 +59,7 @@ class UserMailer < ApplicationMailer
   end
 
   def notify
-    admin = "f952f7f09ff9701beb911edec84127ab@inbound.postmarkapp.com"
+    admin = "c5479ff42d68a96759974f00e6a16d06@inbound.postmarkapp.com"
     mail(
         subject: 'You have a new client interested!',
         to: admin,
