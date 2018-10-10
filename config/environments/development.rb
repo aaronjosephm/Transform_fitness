@@ -56,6 +56,7 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :postmark
   config.action_mailer.postmark_settings = { :api_token => "b373f417-b5db-4935-81d5-21d81d6638fc" }
+  # "b373f417-b5db-4935-81d5-21d81d6638fc"
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

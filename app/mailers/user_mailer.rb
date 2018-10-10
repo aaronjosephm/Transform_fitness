@@ -20,7 +20,6 @@ class UserMailer < ApplicationMailer
 
   def test(email, message, name)
     @user = {email: email, message: message, name: name}
-
     if (email.match(/\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i).nil? || name == "")
       return false
     else
@@ -40,7 +39,7 @@ class UserMailer < ApplicationMailer
     else
       mail(
         subject: 'Transformation Fitness welcomes you!',
-        to: "fitcoach@tfithealthcoaching.com",
+        to: "FitCoach@tfithealthcoaching.com",
         from: 'FitCoach@tfithealthcoaching.com',
         html_body: '<strong>Hello</strong> dear Postmark user.',
         track_opens: 'true')
@@ -49,6 +48,18 @@ class UserMailer < ApplicationMailer
   end
 
   def admin_notify(email, question1, question2, question3, level, option, name)
+    @user = {email: email, question1: question1, question2: question2, question3: question3, level: level, option: option, name: name}
+    admin = "FitCoach@tfithealthcoaching.com"
+     mail(
+        subject: 'You have a new client interested!',
+        to: admin,
+        from: 'FitCoach@tfithealthcoaching.com',
+        html_body: '<strong>Hello</strong> dear Postmark user.',
+        track_opens: 'true')
+  end
+
+  def msg_notify(email, message, name)
+    @user = {email: email, message: message, name: name}
     admin = "FitCoach@tfithealthcoaching.com"
      mail(
         subject: 'You have a new client interested!',
