@@ -39,7 +39,7 @@ class UserMailer < ApplicationMailer
     else
       mail(
         subject: 'Transformation Fitness welcomes you!',
-        to: "FitCoach@tfithealthcoaching.com",
+        to: email,
         from: 'FitCoach@tfithealthcoaching.com',
         html_body: '<strong>Hello</strong> dear Postmark user.',
         track_opens: 'true')
@@ -47,7 +47,7 @@ class UserMailer < ApplicationMailer
     end
   end
 
-  def admin_notify(email, question1, question2, question3, level, option, name)
+  def admin(email, question1, question2, question3, level, option, name)
     @user = {email: email, question1: question1, question2: question2, question3: question3, level: level, option: option, name: name}
     admin = "FitCoach@tfithealthcoaching.com"
      mail(
