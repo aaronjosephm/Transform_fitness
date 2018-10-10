@@ -92,7 +92,7 @@
 }
 
 .quote {
-  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), url("https://cdn.buttercms.com/nj99dCRQRRSEbSLBVjvj");
+  background-image: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.2)), url("https://cdn.buttercms.com/MctKQOOuQD72jsGBU4Ll");
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   background-size: cover;
@@ -212,7 +212,7 @@
 }
 
 .tyler-portrait {
-  background-image: url("https://cdn.buttercms.com/RQxJB6pBTrmdIxRS2Oas");
+  background-image: url("https://cdn.buttercms.com/ySR8Yl7PSfWQmISIuo5Z");
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -237,7 +237,7 @@
 
 }
 
-.result-photo {
+/*.result-photo {
   height: 315px;
   width: 300px;
   background-image: url("https://cdn.buttercms.com/THQwdfyQWCfmpLJQCU3x");
@@ -245,7 +245,7 @@
   background-position: center;
   padding-right: 0;
   margin-right: 0 !important;
-}
+}*/
 
 .program-card {
   height: 600px;

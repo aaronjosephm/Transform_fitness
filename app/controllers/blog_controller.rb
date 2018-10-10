@@ -14,7 +14,7 @@ class BlogController < ApplicationController
   end
 
   def blog_of_day
-    @blogpage = ButterCMS::Page.get('*', 'blog').data.fields
+    # @blogpage = ButterCMS::Page.get('*', 'blog').data.fields
     @post = ButterCMS::Post.all({:page => 1, :page_size => 10}).first
   end
 end
