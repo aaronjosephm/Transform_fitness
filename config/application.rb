@@ -14,6 +14,8 @@ module TfitnessRes
     config.load_defaults 5.2
 
     config.action_view.embed_authenticity_token_in_remote_forms = true
+    config.action_mailer.delivery_method = :postmark
+    config.action_mailer.postmark_settings = { :api_token => ENV['POSTMARK_API_KEY'] }
 
     # config.action_mailer.delivery_method = :postmark
     # config.action_mailer.postmark_settings = { :api_token => "b373f417-b5db-4935-81d5-21d81d6638fc" }

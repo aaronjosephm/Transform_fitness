@@ -54,8 +54,8 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
-  config.action_mailer.delivery_method = :postmark
-  config.action_mailer.postmark_settings = { :api_token => "b373f417-b5db-4935-81d5-21d81d6638fc" }
+  # config.action_mailer.delivery_method = :postmark
+  # config.action_mailer.postmark_settings = { :api_token => "b373f417-b5db-4935-81d5-21d81d6638fc" }
   # "b373f417-b5db-4935-81d5-21d81d6638fc"
 
   # Raises error for missing translations
