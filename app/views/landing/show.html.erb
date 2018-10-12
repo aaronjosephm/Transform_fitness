@@ -237,27 +237,30 @@
     <%= image_tag "logo1.png", size: "100x100" %>
     <h1 style="margin-left: 30px; letter-spacing: 2px;"><strong><h1 style="color: #C42626; letter-spacing: 2px;"><strong>TRANSFORMATION</strong></h1> FITNESS</strong></h1>
   </div>
+</div>
 
+<div class="contact-form" style="background-color: #111 !important; padding-top: 10px; padding-left: 100px; padding-right: 100px;">
   <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center; align-items: center; margin-top: 1vw;">
-      <h1 style="margin-right: 5vw; margin-left: 5vw; border-color: black; border-bottom: solid 1px;"><strong>LEAVE YOUR NAME AND EMAIL</strong></h1>
+      <h1 style="color: white !important; margin-right: 5vw; margin-left: 5vw; border-color: black; border-bottom: solid 1px;"><strong>LEAVE YOUR NAME AND EMAIL</strong></h1>
+      <p style="color: white !important;"> And we will get back to you shortly!</p>
 
     </div>
 
-  <div class="container">
+  <div class="container" style="padding-bottom: 50px !important;  padding-right: 50px !important; padding-left: 50px !important;">
     <form action="/landing" data-remote="true" method="post">
       <!-- <%= form_tag(contact_path) do %> -->
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-6" style="color: white !important;">
             <label for="inputEmail4">Email * (required)</label>
             <input type="email" class="form-control" name="email" placeholder="Email">
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-6" style="color: white !important;">
             <label for="inputName">Name * (required)</label>
             <input class="form-control" type="text" name="name" placeholder="Name">
             <!-- <input class="form-control" type="text" id="name" placeholder="First Last"> -->
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="color: white !important;">
           <label for="exampleFormControlTextarea1">Message (optional)</label>
           <textarea class="form-control" type="text" name="message" rows="3"></textarea>
         </div>
@@ -265,6 +268,9 @@
       <!-- <% end %> -->
        </form>
   </div>
+</div>
+
+  <div class="landing-container">
 
   <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center; align-items: center; margin-top: 1vw;">
       <h1 style="margin-right: 5vw; margin-left: 5vw; border-color: black; border-bottom: solid 1px;"><strong>OUR LOCATION:</strong></h1>
