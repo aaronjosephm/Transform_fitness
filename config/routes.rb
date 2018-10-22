@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   get '/programs', to: 'programs#show'
 
+  get '/location', to: 'location#show'
+
   get '/blog', to: 'blog#blog_of_day'
 
   get '/blogs', to: 'blog#index'
