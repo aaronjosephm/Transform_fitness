@@ -1,0 +1,180 @@
+<div class="about-banner">
+  <div class="container">
+    <div class="row" style="display: flex; justify-content: center; border-bottom: solid 1px; border-color: white;">
+      <h2>WHAT WE OFFER</h2>
+    </div>
+    <div class="row" style="display: flex; justify-content: center; margin-top: 1vw;">
+      <h3 style="letter-spacing: 3px;">OUR PROGRAMS IN DETAIL</h3>
+    </div>
+  </div>
+</div>
+
+<style>
+
+@media (max-width: 770px) {
+  .about-banner h2 {
+    font-size: 25px !important;
+  }
+
+  .about-banner h3 {
+    font-size: 15px !important;
+  }
+
+  .bio-card h2 {
+    font-size: 15px !important;
+  }
+
+  .bio-card h1 {
+    font-size: 15px !important;
+  }
+
+  .program-card {
+    height: 700px;
+  }
+
+  .card-outline {
+    width: 400px;
+    height: 700px;
+  }
+
+  .card-details {
+    width: 380px;
+    height: 600px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .landing-banner h1 {
+    font-size: 30px !important;
+  }
+
+  .landing-banner h2 {
+    font-size: 20px !important;
+  }
+
+  .landing-container h2 {
+    font-size: 15px !important;
+  }
+
+  .landing-container h1 {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 1040px) {
+  .program-card {
+
+  }
+
+}
+
+@media (max-width: 390px) {
+  .program-card {
+    height: 900px;
+  }
+
+  .card-outline {
+    width: 300px;
+    height: 900px;
+  }
+
+  .card-details {
+    width: 280px;
+    height: 800px;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .about-banner h2 {
+    font-size: 20px !important;
+  }
+
+
+
+  .about-banner h3 {
+    font-size: 10px !important;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .programs h1 {
+    font-size: 20px !important;
+  }
+}
+
+</style>
+
+
+<div class="landing-container">
+  <div class="text-center" style="margin-bottom: 30px; display: flex; justify-content: center; align-items: center;">
+    <%= image_tag "logo1.png", size: "100x100" %>
+    <h1 style="margin-left: 30px; letter-spacing: 2px;"><strong><h1 style="color: #C42626; letter-spacing: 2px;"><strong>TRANSFORMATION</strong></h1> FITNESS</strong></h1>
+  </div>
+</div>
+
+<div class="about-content" style="background-image: -webkit-linear-gradient(150deg, #282727 35%, #111 35%);">
+    <div class="programs col-sm-12 col-md-12 col-lg-12" style="text-align: center; align-items: center; margin-top: 1vw;">
+      <h1 style="letter-spacing: 2px; margin-right: 5vw; margin-left: 5vw; border-color: black; border-bottom: solid 1px;"><strong>PROGRAMS</strong></h1>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+      <div class="program-card col-sm-12 col-md-12 col-lg-6">
+        <div class="card-outline">
+          <div class="card-details">
+            <h3 style="padding-top: 5px; padding-bottom: 5px; background-color: red; letter-spacing: 1px; text-align: center;"><strong><i class="fas fa-users"></i> GROUP TRAINING</strong></h3>
+            <p style="text-align: center; font-style: italic;"> Semi Private Training (2-4 clients)</p>
+            <br>
+            <h3 style="text-align: center;">What's included?</h3>
+            <ul>
+              <li>Small group classes led by our expert trainers.</li>
+              <li>Our customized flexible meal program.</li>
+              <li>Supplement guidance.</li>
+              <li>Motivation, support, accountability, and community.</li>
+              <li>Phone or email access to your coach.</li>
+              <li>Additional online coaching for days outside of your classes.</li>
+              <li>Access to our virtual Transformation Coaching App (featuring exercise programs, videos, and descriptions as well as everything featured in our virtual Transformation experience program).</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <div class="row" style="display: flex; justify-content: center;">
+              <%= link_to contact_path do %>
+                <button type="button" class="btn btn-danger" style="padding-left: 30px; padding-right: 30px; background-color: black !important;"><strong>REGISTER </strong></button>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program-card col-sm-12 col-md-12 col-lg-6">
+        <div class="card-outline">
+          <div class="card-details">
+            <h3 style="padding-top: 5px; padding-bottom: 5px; background-color: red; letter-spacing: 1px; text-align: center;"><strong><i class="fas fa-user"></i> INDIVIDUAL TRAINING</strong></h3>
+            <p style="text-align: center; font-style: italic;"> One on one training, and the most in depth and personalized training program we offer.</p>
+            <h3 style="text-align: center;">What's included?</h3>
+            <ul>
+              <li>One on one training with our expert trainers</li>
+              <li>Fully customized training program.</li>
+              <li>Fully customized meal program.</li>
+              <li>Supplement guidance.</li>
+              <li>Postural correction, and rehab (if needed).</li>
+              <li>Motivation, support, accountability, and community.</li>
+              <li>Phone or email access to your coach.</li>
+              <li>Additional online coaching.</li>
+              <li>Access to our virtual Transformation Coaching App (featuring exercise programs, videos, and descriptions as well as everything featured in our virtual Transformation experience program).</li>
+              <li>Show prep coaching (optional).</li>
+            </ul>
+            <div class="row" style="display: flex; justify-content: center;">
+              <%= link_to contact_path do %>
+                <button type="button" class="btn btn-danger" style="background-color: black !important; padding-left: 30px; padding-right: 30px;"><strong>REGISTER </strong></button>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="quote">
+  <h1>"Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength."</h1>
+</div>
