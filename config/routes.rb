@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   post '/landing', to: 'landing#create'
 
+  post '/location', to: 'location#create'
+
   get '/about', to: 'about#show'
 
   get '/testimonials', to: 'testimonials#show'

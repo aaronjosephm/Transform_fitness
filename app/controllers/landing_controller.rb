@@ -15,10 +15,10 @@ class LandingController < ApplicationController
       UserMailer.notify.deliver_now
       UserMailer.msg_notify(email, message, name).deliver_now
       # raise
-      redirect_to landing_path
+      redirect_to location_path
     else
       flash[:alert] = "Please fill out required fields!"
-      redirect_to landing_path
+      redirect_to location_path
     end
   end
 end
